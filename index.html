@@ -1,1 +1,45 @@
-<html><head><title>nanoreset</title></head><body>nanoreset</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>nanoreset: a very small CSS reset for modern browsers</title>
+  <link href="nanoreset.min.css" rel="stylesheet" type="text/css">
+<!--
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+-->
+  <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet" type="text/css">
+  <style>
+    #code {
+      font-family: "PT Mono", monospace;
+      white-space: pre;
+//      text-align: center;
+background-color: red;
+border: 1px solid blue;
+display: block;
+width: 33%;
+margin: 1em auto 0;
+    }
+  </style>
+</head>
+<body>
+<code id="code">
+html,
+body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after
+{
+    box-sizing: border-box;
+}
+</code>
+</body>
+</html>
