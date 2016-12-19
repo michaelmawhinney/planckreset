@@ -1,14 +1,12 @@
 html,
-body
-{
-    width: 100%;
-    margin: 0;
-    padding: 0;
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 *,
 *:before,
-*:after
-{
-    box-sizing: border-box;
+*:after {
+  box-sizing: border-box;
 }
