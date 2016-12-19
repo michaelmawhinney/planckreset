@@ -8,7 +8,7 @@ var fs            = require('fs');
 
 // css
 var csscomb       = require('gulp-csscomb');  
-var cssmin        = require('gulp-cssmin');
+var cssclean      = require('gulp-clean-css');
 var csslint       = require('gulp-csslint');
 
 gulp.task('comb', function(){
@@ -28,7 +28,7 @@ gulp.task('lint', function(){
 
 gulp.task('min', function(){
   return gulp.src('nanoreset.css')
-    .pipe(cssmin())
+    .pipe(cssclean())
     .pipe(rename({
       suffix: '.min'
     }))
