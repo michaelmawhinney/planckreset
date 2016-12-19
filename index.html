@@ -7,6 +7,16 @@
   <title>nanoreset: a very small CSS reset for modern browsers</title>
   <link href="nanoreset.min.css" rel="stylesheet" type="text/css">
   <style>
+    body {
+      background: #551a8b;
+      color: #fff;
+      font-family: sans-serif;
+    }
+    p {
+      font: 2.5em sans-serif;
+      margin-top: 3em;
+      text-align: center;
+    }
     code {
       display: block;
       font: 2em monospace;
@@ -18,21 +28,23 @@
 </head>
 <body>
 
+<p>
+  the days of long CSS resets are over.<br>
+  <span style="font-size:1.5em">say hello to <b>nanoreset</b>.</span>
+</p>
+
 <code>html,
-body
-{
+body {
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0
 }
 
 *,
 *:before,
-*:after
-{
-  box-sizing: border-box;
+*:after {
+  box-sizing: border-box
 }</code>
 
-<code>
 </body>
 </html>
