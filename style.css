@@ -80,14 +80,18 @@ p {
   box-shadow: 0 1em 1em rgba(255,0,0,0.5);
 }
 
+nav {
+  position: fixed;
+  top: 1em;
+  right: 1em;
+}
+
 #github {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
+  display: block;
   color: #fff;
   opacity: 0.5;
-  width: 3em;
-  height: 3em;
+  width: 4em;
+  height: 4em;
   background-position: left center;
   background-size: contain;
   background-repeat: no-repeat;
