@@ -7,8 +7,8 @@ body {
 }
 
 *,
-*:before,
-*:after {
+:before,
+:after {
   box-sizing: border-box
 }
 
@@ -39,7 +39,7 @@ h1 {
   margin: 0
 }
 
-h1 > strong {
+strong {
   font-weight: 700
 }
 
