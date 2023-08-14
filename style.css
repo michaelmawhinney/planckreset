@@ -1,6 +1,15 @@
 html,
 body {
   height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box
 }
 
 body {
@@ -10,45 +19,39 @@ body {
   display: flex;
   flex-flow: column nowrap;
   font-family: sans-serif;
-  justify-content: space-evenly;
+  justify-content: space-evenly
 }
 
 a {
-  color: white;
-  text-decoration-style: dotted;
+  color: #fff;
+  text-decoration-style: dotted
 }
 
 header {
   font-size: 2em;
   text-align: center;
+  display: grid;
+  gap: 0.5em;
 }
 
 h1 {
-  font-weight: normal;
-  margin: 0;
+  font-weight: 400;
+  margin: 0
 }
 
 h1 > strong {
-  font-weight: bold;
+  font-weight: 700
 }
 
-code.source {
-  font-size:2em;
-  white-space: pre;
+figure {
+  border: 1px solid rgba(255,255,255,0.5);
+  padding: 2em 4em;
+  border-radius: 1em;
+  box-shadow: 0 1em 1em rgba(255,255,255,0.5);
+
 }
 
-code span {
-  display: block;
-}
-
-code span:nth-child(2) {
-  margin-left: 3em;
-}
-
-code span:nth-child(3) {
-  margin-left: 6em;
-}
-
-code span:nth-child(4) {
-  margin-left: 9em;
+code {
+  font-size: 3em;
+  white-space: pre
 }
