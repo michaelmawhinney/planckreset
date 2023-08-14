@@ -7,13 +7,18 @@
     <title>planckreset: an extremely small CSS reset for modern browsers</title>
   </head>
   <body>
+    <nav>
+      <a id="github" href="https://github.com/michaelmawhinney/planckreset" title="planckreset on GitHub"></a>
+    </nav>
     <header>
       <div>possibly the smallest <a href="https://en.wikipedia.org/wiki/Reset_style_sheet" title="CSS reset on Wikipedia">CSS reset</a> in the universe?</div>
       <div>with an infinitesimal size of only 79 bytes...</div>
       <h1>say hello to <strong>planckreset</strong>.</h1>
     </header>
-    <figure>
-      <code>html,
+    <div>
+      <p>Click anywhere in the box below to copy the code snippet</p>
+      <figure onclick="clip()" id="fig">
+        <code>html,
 body {
   width: 100%;
   margin: 0;
@@ -25,6 +30,25 @@ body {
 :after {
   box-sizing: border-box
 }</code>
-    </figure>
+      </figure>
+    </div>
+  <script>
+  const f = document.getElementById("fig");
+  const t = (e,c) => {
+    e.classList.add(c);
+    setTimeout(() => e.classList.remove(c),500);
+  };
+  const clip = async () => {
+    try {
+      await navigator.clipboard.writeText(
+        "body,html{width:100%;margin:0;padding:0}*,:after,:before{box-sizing:border-box}"
+      );
+      t(f,'pass');
+    } catch (e) {
+      t(f,'fail');
+      console.log("planckreset copy error");
+    }
+  };
+  </script>
   </body>
 </html>
